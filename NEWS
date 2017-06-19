@@ -1,0 +1,33 @@
+**************** 2.0 *****************
+
+2.0.0: Merging of scatters into large data-sets.
+Two types of data-sets: Branch-based and Segment-based.
+Branch describes branch statistics, Segment - statistics
+of the individual segments in the branches.
+All previous data-sets can be combined into two large
+data-sets for each order.
+
++ More adaptation to the general Bayes Forest interface.
+
+**************** 1.0 *****************
+
+1.1.2: Other scatters and new random features:
+i) New scatters are added.
+ii) Azimuthal rotation noise (Gauss, see AZROTSD macro)
+
+1.1.1: Scatter output patch:
+i) Avoid and warn on NaN values.
+ii) NaN are not reported (this causes problems in the 
+subsequent Bayes Forest scatter analysis).
+iii) Scatters for the trunk (taper and curvature only).
+iv) Poisson shedding infinite loop security code.
+
+1.1: Shedding options:
+i) delayed production of buds that are not allowed to grow due to (radiation) conditions.
+ii) shedding year: year requirement on the youngest segment in the branch to shed.
+iii) Random number of segment from the tip to shed: uniform and Poisson distributions.
+
+1.0: Full version, ready to run, with several parameter sets 
+and all features of LIGNUM as of publications Perttunen et al. 1998,
+Sievanen et al. 2008, except for the radiation conditions, which are taken from
+Palubicki et al., 2009.
